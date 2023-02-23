@@ -165,19 +165,18 @@ if __name__ == "__main__":
         y_pred.append(viterbi(sent, memm, False))
 
     print("Writing to results_memm.txt")
-    # format is: word gold pred
-    j = 0
     with open("results_memm.txt", "w") as out:
-        for sent in dev_sents[:100]:
-            for i in range(len(sent)):
-                word = sent[i][0]
-                gold = sent[i][-1]
-                if j < len(y_pred):
-                    pred = y_pred[j]
-                    j += 1
-                else:
-                    pred = "O"
+        for i in range(len(dev_sents[:100])):
+            sent = dev_sents[i]
+            pred_tags = y_pred[i]
+            for j in range(len(sent)):
+                word = sent[j][0]
+                gold = sent[j][-1]
+                pred = y_pred[i][j]
+                print(word)
+                print(gold)
+                print(pred)
                 out.write("{}\t{}\t{}\n".format(word, gold, pred))
-        out.write("\n")
+            out.write("\n")
 
     print("Now run: python3 conlleval.py results_memm.txt")
