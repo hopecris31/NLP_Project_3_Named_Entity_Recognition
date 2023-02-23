@@ -19,7 +19,7 @@ def getfeats(word, o):
     """
     o = str(o)
     features = [
-        (o + 'word', word),
+        (o + 'word', word), #the actual word before, not the label
         (o + 'word.istitle', word.istitle()),
         (o + 'word.islower', word.islower()),
         (o + 'word.isidentifier', word.isidentifier()),
