@@ -1,8 +1,10 @@
 """Named Entity Recognition as a sequence tagging task.
 
-Author: Kristina Striegnitz and Hope Crisa
+Author: Kristina Striegnitz and Hope Crisafi
 
-<HONOR CODE STATEMENT HERE>
+I affirm that I have carried out the attached academic endeavors with
+full academic honesty, in accordance with the Union College Honor Code and the course
+syllabus.
 
 Complete this file for part 2 of the project.
 """
@@ -91,6 +93,9 @@ def pretty_print_trellis(V):
 # Word classifier
 #
 #################################
+
+
+
 
 def getfeats(word, o):
     """Take a word its offset with respect to the word we are trying to
@@ -181,7 +186,7 @@ if __name__ == "__main__":
     for sent in dev_sents[:100]:
         for i, word in enumerate(sent):
             features = dict(word2features(sent, i))
-            y_pred.append(viterbi(word, memm, True))
+            y_pred.append(viterbi(word, memm, pretty_print=True))
     #go through each word in the sentence, get the features for that word, and then use the classifier to get the prob for each state
 
     print("Writing to results_memm.txt")
