@@ -20,6 +20,12 @@ import numpy as np
 import memm
 
 
+#################################
+#
+# Word classifier
+#
+#################################
+
 def getfeats(word, o):
     """Take a word its offset with respect to the word we are trying to
     classify. Return a list of tuples of the form (feature_name,
@@ -62,7 +68,7 @@ def word2features(sent, i):
 #################################
 
 def viterbi(obs, memm, pretty_print=False):
-    V = np.zeros((len(obs), len(memm.states)))
+    V = [{}]
     path = {}
 
     initial_observation_features = dict(word2features(obs, 0))
@@ -70,12 +76,14 @@ def viterbi(obs, memm, pretty_print=False):
     vectorized_features = memm.vectorize_observations(initial_observation_features)
     initial_state_probs = memm.classifier.predict_log_proba(vectorized_features)
 
-    V[0] = initial_state_probs
-
-    for state, i in enumerate(memm.states):
+    index = 0
+    for state in memm.states:
+        V[0][state] = initial_state_probs[0][index]
         path[state] = [state]
+        index += 1
 
     for word_index in range(1, len(obs)):
+        V.append({})
         newpath = {}
         for state in memm.states:
             max_v = float('-inf')
@@ -86,8 +94,8 @@ def viterbi(obs, memm, pretty_print=False):
                 vectorized_features = memm.vectorize_observations(observation_features)
 
                 state_probs = memm.classifier.predict_log_proba(vectorized_features)
-                state_probs.concatenate(prev_state)
-                for probability in state_probs:
+                # state_probs.append(prev_state)
+                for probability in state_probs[0]:
                     if probability > max_v:
                         max_v = probability
                         max_prev_state = prev_state
@@ -127,9 +135,6 @@ if __name__ == "__main__":
     for sent in train_sents:
         for i in range(len(sent)):
             feats = dict(word2features(sent, i))
-            # TODO: training needs to take into account the label of
-            # the previous word. And <S> if i is the first words in a
-            # sentence.
             train_labels.append(sent[i][-1])
             if i == 0:
                 feats['-1label'] = "<S>"
@@ -156,33 +161,22 @@ if __name__ == "__main__":
     states = ['B-PER', 'I-PER', 'B-LOC', 'I-LOC', 'B-ORG', 'I-ORG', 'B-MISC', 'I-MISC', 'O']
     vocabulary = 0
     memm = memm.MEMM(states, vocabulary, vectorizer, model)
-    for i in range(100):
-        sent = dev_sents[i]
-        # TODO: extract the feature representations for the words from
-        # the sentence; use the viterbi algorithm to predict labels
-        # for this sequence of words; add the result to y_pred
-        #  index = 0
-        # for index in range(len(sent)):
-        #   features = dict(word2features(sent, index))
-        #   if index == 0:
-        #       features['-1label'] = "<S>"
-        #   else:
-        #      features['-1label'] = y_pred[-2]
-        #  train_feats.append(feats)
-        # y_pred.append(viterbi(word, memm, False))
-        # index += 1
+    for sent in dev_sents[:100]:
         y_pred.append(viterbi(sent, memm, False))
 
     print("Writing to results_memm.txt")
     # format is: word gold pred
     j = 0
     with open("results_memm.txt", "w") as out:
-        for sent in dev_sents:
+        for sent in dev_sents[:100]:
             for i in range(len(sent)):
                 word = sent[i][0]
                 gold = sent[i][-1]
-                pred = y_pred[j]
-                j += 1
+                if j < len(y_pred):
+                    pred = y_pred[j]
+                    j += 1
+                else:
+                    pred = "O"
                 out.write("{}\t{}\t{}\n".format(word, gold, pred))
         out.write("\n")
 
