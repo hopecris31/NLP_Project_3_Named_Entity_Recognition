@@ -10,10 +10,7 @@ class MEMM:
         self.vectorizer = vectorizer
         self.classifier = classifier
 
-    def get_state_probabilities(self, features, previous_tag):
-        """Given a dictionary of features representing a word and the tag chosen for the
-        previous word, return the probabilities of each of the MEMM's states.
-        """
-        #TODO FIll in this code (optional)
-        #return state_probabilities
+    def vectorize_observations(self, features):
+        """Vectorize the observation features."""
+        return self.vectorizer.transform(features)
 
