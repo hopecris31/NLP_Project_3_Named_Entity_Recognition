@@ -173,9 +173,6 @@ if __name__ == "__main__":
                 word = sent[j][0]
                 gold = sent[j][-1]
                 pred = y_pred[i][j]
-                print(word)
-                print(gold)
-                print(pred)
                 out.write("{}\t{}\t{}\n".format(word, gold, pred))
             out.write("\n")
 
