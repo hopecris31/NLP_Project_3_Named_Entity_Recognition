@@ -30,7 +30,6 @@ def viterbi(obs, hmm, pretty_print=False):
     o0 = hmm.encode(obs[0])
     V.append(np.log(hmm.start_probs)+np.log(hmm.emit_probs[..., o0]))
     paths =  np.array([[i] for i in range(len(hmm.states))])
-    
     # Run Viterbi for all of the subsequent steps/observations: t > 0.
     for t in range(1,len(obs)): #not starting at 0 because deal w 0th obs at start token before
         ot = hmm.encode(obs[t])

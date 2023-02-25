@@ -74,7 +74,7 @@ if __name__ == "__main__":
     # test_sents and run it one last time to produce the output file
     # results_classifier.txt. That is the results_classifier.txt you
     # should hand in.
-    for sent in dev_sents:
+    for sent in test_sents:
         for i in range(len(sent)):
             feats = dict(word2features(sent,i))
             test_feats.append(feats)
@@ -89,7 +89,7 @@ if __name__ == "__main__":
     # format is: word gold pred
     j = 0
     with open("results_classifier.txt", "w") as out:
-        for sent in dev_sents:
+        for sent in test_sents:
             for i in range(len(sent)):
                 word = sent[i][0]
                 gold = sent[i][-1]
