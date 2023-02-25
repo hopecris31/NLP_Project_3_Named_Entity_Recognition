@@ -1,10 +1,9 @@
 """Named Entity Recognition as a sequence tagging task.
 
-Author: Kristina Striegnitz and <YOUR NAME HERE>
+Author: Kristina Striegnitz and Hope Crisafi
 
 <HONOR CODE STATEMENT HERE>
 
-Complete this file for part 2 of the project.
 """
 from nltk.corpus import conll2002
 from sklearn.feature_extraction import DictVectorizer
@@ -33,42 +32,24 @@ def getfeats(word, o):
     o = str(o)
     features = [
         (o + 'word', word),
-        (o + 'all alphanumeric', __all_alphanumeric(word)),
-        (o + 'capitalized', __capitalized(word)),
-        (o + 'all caps', __all_caps(word)),
-        (o + 'has hyphen', __has_hyphen(word)),
-        (o + 'has apostrophe', __has_apostrophe(word))
+        (o + 'word.istitle', word.istitle()),
+        (o + 'word.islower', word.islower()),
+        (o + 'word.isidentifier', word.isidentifier()),
+        (o + 'word.isupper', word.isupper()),
+        (o + 'word.isalnum', word.isalnum()),
+        (o + 'contains hyphen', __contains_hyphen(word)),
+        (o + 'contains apostrophe', __contains_apostrophe(word))
     ]
     return features
 
-def __has_apostrophe(word):
-    for char in word:
-        if char == "'":
-            return True
+def __contains_apostrophe(word):
+    if "'" in word:
+        return True
     return False
 
-def __has_equals_sign(word):
-    for char in word:
-        if char == '=':
-            return True
-    return False
-
-def __all_alphanumeric(word):
-    return word.isalnum()
-
-def __capitalized(word):
-    return word[0].isupper()
-
-def __all_caps(word):
-    for char in word:
-        if char.islower():
-            return False
-    return True
-
-def __has_hyphen(word):
-    for char in word:
-        if char == '-':
-            return True
+def __contains_hyphen(word):
+    if "-" in word:
+        return True
     return False
 
 
@@ -93,7 +74,7 @@ def word2features(sent, i):
 #################################
 
 def viterbi(obs, memm, pretty_print=False):
-    V = [{}]
+    V = []
     path = {}
 
     initial_observation_features = dict(word2features(obs, 0))
@@ -101,35 +82,39 @@ def viterbi(obs, memm, pretty_print=False):
     vectorized_features = memm.vectorize_observations(initial_observation_features)
     initial_state_probs = memm.classifier.predict_log_proba(vectorized_features)
 
-    index = 0
-    for state in memm.states:
-        V[0][state] = initial_state_probs[0][index]
-        path[state] = [state]
-        index += 1
-
-    for word_index in range(1, len(obs)):
-        V.append({})
+    for t in range(len(obs)):
+        V.append(np.zeros(len(memm.states)))
         newpath = {}
         for index, state in enumerate(memm.states):
-            max_v = float('-inf')
-            max_prev_state = None
-            for prev_state in memm.states:
-                observation_features = dict(word2features(obs, word_index))
-                observation_features['-1label'] = prev_state
-                vectorized_features = memm.vectorize_observations(observation_features)
+            if t == 0:
+                V[t][index] = initial_state_probs[0][index]
+                path[state] = [state]
+            else:
+                highest_v = float('-inf')
+                max_prev_state = None
+                for prev_index, prev_state in enumerate(memm.states):
+                    observation_features = dict(word2features(obs, t))
+                    observation_features['-1label'] = prev_state
+                    vectorized_features = memm.vectorize_observations(observation_features)
 
-                state_probs = memm.classifier.predict_log_proba(vectorized_features)
-                v = V[word_index - 1][prev_state] + state_probs[0][index]
+                    state_probs = memm.classifier.predict_log_proba(vectorized_features)
+                    v = V[t - 1][prev_index] + state_probs[0][index]
 
-                if v > max_v:
-                    max_v = v
-                    max_prev_state = prev_state
-            V[word_index][state] = max_v
-            newpath[state] = path[max_prev_state] + [state]
-        path = newpath
+                    if v > highest_v:
+                        highest_v = v
+                        max_prev_state = prev_state
+                V[t][index] = highest_v
+                newpath[state] = path[max_prev_state] + [state]
+        if t > 0:
+            path = newpath
+
     if pretty_print:
         pretty_print_trellis(V)
-    (prob, state) = max([(V[len(obs) - 1][state], state) for state in memm.states])
+
+    prob_state_tuples = [(V[len(obs) - 1][index], state) for index, state in enumerate(memm.states)]
+    max_prob_state_tuple = max(prob_state_tuples)
+    state = max_prob_state_tuple[1]
+
     return path[state]
 
 
@@ -157,7 +142,6 @@ if __name__ == "__main__":
     train_feats = []
     train_labels = []
 
-
     for sent in train_sents:
         for i in range(len(sent)):
             feats = dict(word2features(sent,i))
@@ -178,42 +162,29 @@ if __name__ == "__main__":
             single_feats['-1label'] = labels[-2]
         feats.append(single_feats)
 
-
     # The vectorizer turns our features into vectors of numbers.
     vectorizer = DictVectorizer()
     X_train = vectorizer.fit_transform(train_feats)
-    # Not normalizing or scaling because the example feature is
-    # binary, i.e. values are either 0 or 1.
 
-    model = LogisticRegression(max_iter=1000)
+    model = LogisticRegression(max_iter=600)
     model.fit(X_train, train_labels)
 
-    yes = feats[5]
-    yes_v = vectorizer.transform(yes)
-
-    #sys.exit()
+    #yes = feats[5]
+    #yes_v = vectorizer.transform(yes)
 
     print("\nTesting ...")
-    # While developing use the dev_sents. In the very end, switch to
-    # test_sents and run it one last time to produce the output file
-    # results_memm.txt. That is the results_memm.txt you should hand
-    # in.
-
     y_pred = []
-    states = model.classes_ # 'B-PER', 'I-PER', 'B-LOC', 'I-LOC', 'B-ORG', 'I-ORG', 'B-MISC', 'I-MISC', 'O'
-
+    # 'B-PER', 'I-PER', 'B-LOC', 'I-LOC', 'B-ORG', 'I-ORG', 'B-MISC', 'I-MISC', 'O'
+    states = model.classes_
     vocabulary = 0
     memm = MEMM(states, vocabulary, vectorizer, model)
-
-
-    for sent in test_sents[:100]:
-        y_pred.append(viterbi(sent, memm, False))
 
     print("Writing to results_memm.txt")
     # format is: word gold pred
     j = 0
     with open("results_memm.txt", "w") as out:
         for sent in test_sents[:100]:
+            y_pred.append(viterbi(sent, memm, False))
             for i in range(len(sent)):
                 word = sent[i][0]
                 gold = sent[i][-1]
@@ -223,3 +194,4 @@ if __name__ == "__main__":
         out.write("\n")
 
         print("Now run: python3 conlleval.py results_memm.txt")
+
