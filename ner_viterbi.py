@@ -2,7 +2,7 @@
 
 Author: Kristina Striegnitz and Hope Crisafi
 
-<HONOR CODE STATEMENT HERE>
+I affirm that I have carried this out with full academic integrity.
 
 """
 from nltk.corpus import conll2002
@@ -43,11 +43,17 @@ def getfeats(word, o):
     return features
 
 def __contains_apostrophe(word):
+    """
+    Returns true if the word contains an apostrophe
+    """
     if "'" in word:
         return True
     return False
 
 def __contains_hyphen(word):
+    """
+    Returns true if the word contains a hyphen
+    """
     if "-" in word:
         return True
     return False
@@ -74,6 +80,9 @@ def word2features(sent, i):
 #################################
 
 def viterbi(obs, memm, pretty_print=False):
+    """
+    Viterbi algorithm for finding the most likely sequence of states
+    """
     V = []
     path = {}
 
@@ -168,9 +177,6 @@ if __name__ == "__main__":
 
     model = LogisticRegression(max_iter=600)
     model.fit(X_train, train_labels)
-
-    #yes = feats[5]
-    #yes_v = vectorizer.transform(yes)
 
     print("\nTesting ...")
     y_pred = []

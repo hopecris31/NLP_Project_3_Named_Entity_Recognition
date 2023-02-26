@@ -2,9 +2,7 @@
 
 Author: Kristina Striegnitz and Hope Crisafi
 
-<HONOR CODE STATEMENT HERE>
-
-Complete this file for part 1 of the project.
+I affirm that I have carried out this project with full academic integrity.
 """
 from nltk.corpus import conll2002
 from sklearn.feature_extraction import DictVectorizer
@@ -19,12 +17,33 @@ def getfeats(word, o):
     """
     o = str(o)
     features = [
-        (o + 'word', word), #the actual word before, not the label
+        (o + 'word', word),
         (o + 'word.istitle', word.istitle()),
         (o + 'word.islower', word.islower()),
         (o + 'word.isidentifier', word.isidentifier()),
+        (o + 'word.isupper', word.isupper()),
+        (o + 'word.isalnum', word.isalnum()),
+        (o + 'contains hyphen', __contains_hyphen(word)),
+        (o + 'contains apostrophe', __contains_apostrophe(word))
     ]
     return features
+
+def __contains_apostrophe(word):
+    """
+    Returns true if the word contains an apostrophe
+    """
+    if "'" in word:
+        return True
+    return False
+
+
+def __contains_hyphen(word):
+    """
+    Returns true if the word contains a hyphen
+    """
+    if "-" in word:
+        return True
+    return False
     
 
 def word2features(sent, i):
@@ -60,8 +79,7 @@ if __name__ == "__main__":
     # The vectorizer turns our features into vectors of numbers.
     vectorizer = DictVectorizer()
     X_train = vectorizer.fit_transform(train_feats)
-    # Not normalizing or scaling because the example feature is
-    # binary, i.e. values are either 0 or 1.
+    # Not normalizing or scaling because the example feature is binary
     
     model = LogisticRegression(max_iter=600)
     model.fit(X_train, train_labels)
@@ -70,10 +88,6 @@ if __name__ == "__main__":
     test_feats = []
     test_labels = []
 
-    # While developing use the dev_sents. In the very end, switch to
-    # test_sents and run it one last time to produce the output file
-    # results_classifier.txt. That is the results_classifier.txt you
-    # should hand in.
     for sent in test_sents:
         for i in range(len(sent)):
             feats = dict(word2features(sent,i))
@@ -81,8 +95,6 @@ if __name__ == "__main__":
             test_labels.append(sent[i][-1])
 
     X_test = vectorizer.transform(test_feats)
-    # If you are normaling and/or scaling your training data, make
-    # sure to transform your test data in the same way.
     y_pred = model.predict(X_test)
 
     print("Writing to results_classifier.txt")

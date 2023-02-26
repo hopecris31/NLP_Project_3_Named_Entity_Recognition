@@ -470,7 +470,7 @@ denominado	O	O
 "	B-MISC	O
 Grupo	I-MISC	B-ORG
 San	I-MISC	I-ORG
-Victorino	I-MISC	I-LOC
+Victorino	I-MISC	I-MISC
 II	I-MISC	I-MISC
 "	I-MISC	O
 ,	O	O
@@ -783,7 +783,7 @@ puede	O	O
 ser	O	O
 la	O	O
 eliminatoria	O	O
-Oceanía-Sudamérica	B-MISC	O
+Oceanía-Sudamérica	B-MISC	B-ORG
 por	O	O
 una	O	O
 plaza	O	O
@@ -792,7 +792,7 @@ la	O	O
 Copa	B-MISC	B-MISC
 del	I-MISC	I-MISC
 Mundo	I-MISC	I-MISC
-del	O	I-MISC
+del	O	O
 2002	O	O
 .	O	O
 El	O	O
@@ -963,7 +963,7 @@ y	O	O
 Danny	B-PER	B-PER
 Tiatto	I-PER	I-PER
 (	O	O
-Manchester	B-ORG	B-PER
+Manchester	B-ORG	B-LOC
 City	I-ORG	I-PER
 ,	O	O
 Inglaterra	B-LOC	B-LOC
@@ -1107,8 +1107,8 @@ partidos	O	O
 ante	O	O
 el	O	O
 equipo	O	O
-Sub-23	B-ORG	O
-de	I-ORG	O
+Sub-23	B-ORG	B-ORG
+de	I-ORG	I-ORG
 Brasil	I-ORG	B-LOC
 ,	O	O
 por	O	O
@@ -3253,7 +3253,7 @@ que	O	O
 se	O	O
 derribarán	O	O
 .	O	O
-Moneo	B-PER	B-LOC
+Moneo	B-PER	O
 ,	O	O
 que	O	O
 se	O	O
@@ -3502,7 +3502,7 @@ Rozas	I-LOC	I-LOC
 )	O	O
 y	O	O
 la	O	O
-AV-503	B-MISC	O
+AV-503	B-MISC	B-ORG
 (	O	O
 Avila	B-LOC	B-LOC
 -	O	O
@@ -3732,7 +3732,7 @@ de	O	O
 los	O	O
 músicos	O	O
 uruguayos	O	O
-Fernando"Lobo"Núñez	B-PER	O
+Fernando"Lobo"Núñez	B-PER	I-MISC
 (	O	O
 tamboriles	O	O
 )	O	O
@@ -3749,7 +3749,7 @@ Fattoruso	I-PER	I-PER
 producción	O	O
 )	O	O
 .	O	O
-Serrat	B-PER	B-LOC
+Serrat	B-PER	O
 ,	O	O
 que	O	O
 dijo	O	O
@@ -5014,7 +5014,7 @@ de	I-ORG	I-ORG
 Colegios	I-ORG	I-ORG
 de	I-ORG	I-ORG
 Aparejadores.	I-ORG	I-ORG
-Arquitectos	I-ORG	I-ORG
+Arquitectos	I-ORG	I-MISC
 Técnicos	I-ORG	I-PER
 ,	O	O
 distingue	O	O
@@ -5216,7 +5216,7 @@ honorífica	O	O
 el	O	O
 diario	O	O
 '	B-ORG	B-ORG
-El	I-ORG	O
+El	I-ORG	B-MISC
 Mundo	I-ORG	I-MISC
 '	I-ORG	O
 ,	O	O
@@ -5288,7 +5288,7 @@ Colegio	B-ORG	B-ORG
 Oficial	I-ORG	I-ORG
 de	I-ORG	I-ORG
 Aparejadores.	I-ORG	I-ORG
-Arquitectos	I-ORG	I-ORG
+Arquitectos	I-ORG	I-MISC
 Técnicos	I-ORG	I-ORG
 de	O	I-ORG
 Burgos	B-LOC	B-LOC
@@ -5941,7 +5941,7 @@ del	O	O
 lindante	O	O
 norte	O	O
 de	O	O
-Israel	B-LOC	B-ORG
+Israel	B-LOC	B-LOC
 que	O	O
 vuelvan	O	O
 a	O	O
@@ -6092,7 +6092,7 @@ ESL	B-ORG	B-ORG
 el	O	O
 aliado	O	O
 de	O	O
-Israel	B-LOC	B-ORG
+Israel	B-LOC	B-LOC
 que	O	O
 contribuyó	O	O
 a	O	O
@@ -6276,7 +6276,7 @@ el	O	O
 paso	O	O
 fronterizo	O	O
 de	O	O
-Fatma-Metula	B-LOC	O
+Fatma-Metula	B-LOC	I-ORG
 había	O	O
 esta	O	O
 tarde	O	O
@@ -6544,7 +6544,7 @@ la	O	O
 aldea	O	O
 libanesa	O	O
 de	O	O
-Mis	B-LOC	B-MISC
+Mis	B-LOC	I-ORG
 a-Yábel	I-LOC	O
 ,	O	O
 que	O	O
@@ -6775,7 +6775,7 @@ secretaria	O	O
 de	O	O
 Estado	B-MISC	B-ORG
 de	I-MISC	I-ORG
-Presupuestos	I-MISC	B-LOC
+Presupuestos	I-MISC	I-ORG
 ,	O	O
 Elvira	B-PER	B-PER
 Rodríguez	I-PER	I-PER
@@ -7356,7 +7356,7 @@ la	O	O
 Mancomunidad	B-ORG	B-LOC
 de	I-ORG	I-ORG
 Municipios	I-ORG	B-LOC
-del	I-ORG	I-MISC
+del	I-ORG	I-ORG
 Campo	I-ORG	B-LOC
 de	I-ORG	I-LOC
 Gibraltar	I-ORG	I-LOC
@@ -7795,7 +7795,7 @@ de	O	O
 violencia	O	O
 "	O	O
 .	O	O
-Imaz	B-PER	B-PER
+Imaz	B-PER	O
 reitero	O	O
 su	O	O
 llamamiento	O	O
@@ -9054,7 +9054,7 @@ llevará	O	O
 el	O	O
 título	O	O
 "	B-MISC	O
-El	I-MISC	O
+El	I-MISC	B-MISC
 Entrenamiento:	I-MISC	O
 una	I-MISC	O
 experiencia	I-MISC	O
@@ -9433,7 +9433,7 @@ de	O	O
 300	O	O
 alumnos	O	O
 .	O	O
-Lalín	B-LOC	B-LOC
+Lalín	B-LOC	O
 ,	O	O
 23	O	O
 may	O	O
@@ -9911,7 +9911,7 @@ de	O	O
 premios	B-MISC	O
 Viña	I-MISC	B-MISC
 de	I-MISC	I-ORG
-Madrid	I-MISC	I-ORG
+Madrid	I-MISC	B-LOC
 2000	I-MISC	I-MISC
 ,	O	O
 organizado	O	O
@@ -10077,7 +10077,7 @@ Consejo	B-ORG	B-ORG
 Regulador	I-ORG	I-ORG
 de	I-ORG	I-ORG
 la	I-ORG	O
-D.	I-ORG	I-ORG
+D.	I-ORG	B-MISC
 O.	I-ORG	I-PER
 ,	O	O
 que	O	O
@@ -10088,7 +10088,7 @@ premios	O	O
 "	B-MISC	O
 Viña	I-MISC	B-MISC
 de	I-MISC	I-ORG
-Madrid	I-MISC	I-ORG
+Madrid	I-MISC	B-LOC
 2000	I-MISC	I-MISC
 "	I-MISC	O
 .	O	O
@@ -10862,7 +10862,7 @@ USO	B-ORG	B-ORG
 ,	O	O
 3	O	O
 de	O	O
-CC.OO	B-ORG	O
+CC.OO	B-ORG	B-ORG
 ,	O	O
 2	O	O
 de	O	O
@@ -11106,7 +11106,7 @@ azar	O	O
 por	O	O
 sorteo	O	O
 .	O	O
-Anteriormente	O	B-LOC
+Anteriormente	O	O
 ,	O	O
 solía	O	O
 ser	O	O
@@ -11336,7 +11336,7 @@ España.	I-ORG	I-ORG
 S.A.	I-ORG	I-ORG
 ,	O	O
 (	O	O
-Panasonic	B-ORG	B-ORG
+Panasonic	B-ORG	B-LOC
 )	O	O
 con	O	O
 sede	O	O
@@ -11597,7 +11597,7 @@ horas	O	O
 en	O	O
 la	O	O
 sala	B-LOC	O
-Trajano	I-LOC	B-LOC
+Trajano	I-LOC	B-ORG
 de	O	O
 Mérida	B-LOC	B-LOC
 .	O	O
@@ -12873,7 +12873,7 @@ la	O	O
 CEI	B-ORG	B-ORG
 "	O	O
 .	O	O
-Lukashenko	B-PER	B-LOC
+Lukashenko	B-PER	O
 ,	O	O
 quien	O	O
 gobierna	O	O
@@ -13178,7 +13178,7 @@ un	O	O
 parque	O	O
 fluvial	O	O
 .	O	O
-Vallehermoso	B-ORG	B-LOC
+Vallehermoso	B-ORG	O
 ,	O	O
 la	O	O
 única	O	O
@@ -13708,7 +13708,7 @@ mes	O	O
 de	O	O
 mayo	O	O
 .	O	O
-Moscoso	B-PER	B-LOC
+Moscoso	B-PER	O
 ,	O	O
 según	O	O
 la	O	O
@@ -14278,7 +14278,7 @@ por	O	O
 ciento	O	O
 .	O	O
 El	O	O
-SS&P500	B-MISC	O
+SS&P500	B-MISC	B-MISC
 ,	O	O
 que	O	O
 tiene	O	O
@@ -14645,7 +14645,7 @@ mes	O	O
 .	O	O
 EFE	O	B-ORG
 afa-c	O	O
-Zaragoza	B-LOC	B-ORG
+Zaragoza	B-LOC	B-LOC
 ,	O	O
 23	O	O
 may	O	O
@@ -14685,7 +14685,7 @@ por	O	O
 la	O	O
 Universidad	B-ORG	B-ORG
 de	I-ORG	I-ORG
-Zaragoza	I-ORG	B-LOC
+Zaragoza	I-ORG	I-ORG
 ,	O	O
 basada	O	O
 en	O	O
@@ -14743,7 +14743,7 @@ por	O	O
 la	O	O
 Universidad	B-ORG	B-ORG
 de	I-ORG	I-ORG
-Zaragoza	I-ORG	B-LOC
+Zaragoza	I-ORG	I-ORG
 ,	O	O
 el	O	O
 71	O	O
@@ -14755,7 +14755,7 @@ en	O	O
 los	O	O
 campus	O	O
 de	O	O
-Zaragoza	B-LOC	B-LOC
+Zaragoza	B-LOC	I-ORG
 ,	O	O
 el	O	O
 16	O	O
@@ -14907,7 +14907,7 @@ en	O	O
 la	O	O
 Universidad	B-ORG	B-ORG
 de	I-ORG	I-ORG
-Zaragoza	I-ORG	B-LOC
+Zaragoza	I-ORG	I-ORG
 ,	O	O
 aunque	O	O
 estimó	O	O
@@ -15950,7 +15950,7 @@ familia	O	O
 del	O	O
 PSOE	B-ORG	B-ORG
 de	I-ORG	O
-Cádiz	I-ORG	I-ORG
+Cádiz	I-ORG	B-LOC
 encabezada	O	O
 por	O	O
 el	O	O
@@ -16626,7 +16626,7 @@ familias	O	O
 por	O	O
 separado	O	O
 .	O	O
-Mieres	B-LOC	B-LOC
+Mieres	B-LOC	O
 ,	O	O
 23	O	O
 may	O	O
@@ -16640,7 +16640,7 @@ decano	O	O
 del	O	O
 Colegio	B-ORG	B-ORG
 de	I-ORG	I-ORG
-Ingenieros	I-ORG	I-ORG
+Ingenieros	I-ORG	B-PER
 Técnicos	I-ORG	I-ORG
 de	I-ORG	I-ORG
 Minas	I-ORG	I-ORG
@@ -16909,7 +16909,7 @@ decano	O	O
 del	O	O
 Colegio	B-ORG	B-ORG
 de	I-ORG	I-ORG
-Ingenieros	I-ORG	I-ORG
+Ingenieros	I-ORG	B-PER
 Técnicos	I-ORG	I-ORG
 de	I-ORG	I-ORG
 Minas	I-ORG	I-ORG
@@ -17091,7 +17091,7 @@ señaló	O	O
 Antón	B-PER	B-PER
 Masa	I-PER	I-PER
 .	O	O
-Mieres	B-LOC	B-LOC
+Mieres	B-LOC	O
 ,	O	O
 23	O	O
 may	O	O
@@ -17110,7 +17110,7 @@ ancianos	O	O
 "	B-ORG	O
 Valle	I-ORG	B-MISC
 del	I-ORG	I-LOC
-Caudal	I-ORG	B-ORG
+Caudal	I-ORG	I-MISC
 "	I-ORG	O
 ,	O	O
 el	O	O
@@ -17443,7 +17443,7 @@ sociedad	O	O
 vasca	O	O
 "	O	O
 .	O	O
-Imaz	B-PER	B-PER
+Imaz	B-PER	O
 resaltó	O	O
 el	O	O
 respeto	O	O
@@ -17464,7 +17464,7 @@ Agustín	B-PER	B-PER
 Ibarrola	I-PER	I-MISC
 "	O	O
 .	O	O
-Imaz	B-PER	B-PER
+Imaz	B-PER	O
 desveló	O	O
 que	O	O
 el	O	O
@@ -17565,21 +17565,21 @@ VARIAC	O	O
 .	O	O
 -	O	O
 Eléctricas	B-MISC	O
-650,23	O	I-MISC
+650,23	O	O
 +7,76	O	O
-Bancos	B-MISC	B-MISC
+Bancos	B-MISC	O
 1.465,64	O	O
 +21,98	O	O
 Químicas	B-MISC	O
-975,10	O	I-MISC
+975,10	O	O
 -13,26	O	O
-Cementos,	B-MISC	O
+Cementos,	B-MISC	B-MISC
 Const..	I-MISC	I-MISC
 Inmob.	I-MISC	I-MISC
 664,81	O	O
 +6,26	O	O
 Metalurgia	B-MISC	O
-312,58	O	I-MISC
+312,58	O	O
 +2,67	O	O
 Alimentación,	B-MISC	O
 Agrics..	I-MISC	I-MISC
@@ -17588,7 +17588,7 @@ For.	I-MISC	I-MISC
 +4,25	O	O
 Textiles.	B-MISC	O
 Papeleras	I-MISC	I-MISC
-170,28	O	I-MISC
+170,28	O	O
 +2,21	O	O
 Comercio.	B-MISC	O
 Finanzas	I-MISC	I-ORG
@@ -17596,7 +17596,7 @@ Finanzas	I-MISC	I-ORG
 +4,82	O	O
 Servicios.	B-MISC	O
 Varios	I-MISC	I-MISC
-2.596,25	O	I-MISC
+2.596,25	O	O
 -11,85	O	O
 En	O	O
 total	O	O
@@ -17630,7 +17630,7 @@ sector	O	O
 medio	O	O
 del	O	O
 mercado	O	O
-BCN	B-MISC	B-ORG
+BCN	B-MISC	B-MISC
 MID	I-MISC	O
 50	I-MISC	O
 ,	O	O
@@ -17678,10 +17678,10 @@ Euro	O	O
 1,1075	O	O
 1,1057	O	O
 Libra	O	O
-0,6783	O	I-MISC
+0,6783	O	O
 0,6706	O	O
 Yen	O	O
-106,77	O	I-MISC
+106,77	O	O
 107,13	O	O
 EFE	B-ORG	B-ORG
 pa-c	O	O
@@ -17774,7 +17774,7 @@ para	O	O
 aprobar	O	O
 bonificaciones	O	O
 del	O	O
-20,	O	B-MISC
+20,	O	O
 40.	O	O
 60	O	O
 por	O	O
@@ -18074,7 +18074,7 @@ La	O	O
 sección	O	O
 sindical	O	O
 de	O	O
-CC.OO.	B-ORG	O
+CC.OO.	B-ORG	B-ORG
 en	O	O
 el	O	O
 Departamento	B-ORG	B-ORG
@@ -18149,7 +18149,7 @@ declaró	O	O
 la	O	O
 consellera	O	O
 de	O	O
-Justicia	B-MISC	B-MISC
+Justicia	B-MISC	I-ORG
 ,	O	O
 Núria	B-PER	B-PER
 de	I-PER	I-ORG
@@ -18658,7 +18658,7 @@ antes	O	O
 "	O	O
 ,	O	O
 dijo	O	O
-Haslund-Christensen	B-PER	O
+Haslund-Christensen	B-PER	B-PER
 .	O	O
 El	O	O
 propio	O	O
@@ -18778,7 +18778,7 @@ la	O	O
 prestigiosa	O	O
 medalla	O	O
 .	O	O
-Mieres	B-LOC	B-LOC
+Mieres	B-LOC	O
 ,	O	O
 23	O	O
 may	O	O
@@ -19061,7 +19061,7 @@ EFE	B-ORG	B-ORG
 La	O	O
 consejera	O	O
 de	O	O
-Servicios	B-ORG	I-ORG
+Servicios	B-ORG	B-ORG
 Sociales	I-ORG	I-ORG
 ,	O	O
 Pilar	B-PER	B-PER
@@ -19087,7 +19087,7 @@ Centro	B-ORG	B-ORG
 de	I-ORG	I-ORG
 Actividades	I-ORG	B-PER
 Pedagógicas	I-ORG	I-MISC
-"	B-ORG	I-MISC
+"	B-ORG	O
 Tomillo	I-ORG	I-MISC
 "	I-ORG	O
 ,	O	O
@@ -19137,7 +19137,7 @@ el	O	O
 Instituto	B-ORG	B-ORG
 Madrileño	I-ORG	I-ORG
 del	I-ORG	I-ORG
-Menor.	I-ORG	O
+Menor.	I-ORG	I-ORG
 la	I-ORG	O
 Familia	I-ORG	B-ORG
 ,	O	O
@@ -19146,7 +19146,7 @@ de	O	O
 la	O	O
 Consejería	B-ORG	B-ORG
 de	I-ORG	I-ORG
-Servicios	I-ORG	I-ORG
+Servicios	I-ORG	B-ORG
 Sociales	I-ORG	I-ORG
 ,	O	O
 con	O	O
@@ -20205,7 +20205,7 @@ en	O	O
 el	O	O
 Pilar	B-LOC	B-LOC
 de	I-LOC	I-LOC
-Zaragoza	I-LOC	B-LOC
+Zaragoza	I-LOC	I-ORG
 ,	O	O
 en	O	O
 la	O	O
@@ -20543,7 +20543,7 @@ Coreto	B-LOC	B-LOC
 del	I-LOC	I-LOC
 Pilar	I-LOC	I-ORG
 de	I-LOC	I-LOC
-Zaragoza	I-LOC	B-LOC
+Zaragoza	I-LOC	I-ORG
 ,	O	O
 el	O	O
 primer	O	O
@@ -21233,7 +21233,7 @@ y	O	O
 secretario	O	O
 general	O	O
 de	O	O
-Gestión.	B-MISC	I-MISC
+Gestión.	B-MISC	I-ORG
 Coordinación	I-MISC	I-MISC
 Sanitaria	I-MISC	I-MISC
 "	O	O
@@ -21434,7 +21434,7 @@ EFE	B-ORG	B-ORG
 El	O	O
 Ayuntamiento	B-ORG	B-ORG
 de	I-ORG	I-ORG
-Amorebieta	I-ORG	I-ORG
+Amorebieta	I-ORG	B-LOC
 invertirá	O	O
 80	O	O
 millones	O	O
@@ -21965,7 +21965,7 @@ andalucismo	O	O
 Blas	B-PER	B-PER
 Infante	I-PER	I-PER
 .	O	O
-Ledesma	B-LOC	B-LOC
+Ledesma	B-LOC	O
 ,	O	O
 que	O	O
 bromeó	O	O
@@ -22055,7 +22055,7 @@ moción	O	O
 de	O	O
 censura	O	O
 .	O	O
-Ledesma	B-LOC	B-LOC
+Ledesma	B-LOC	O
 ,	O	O
 que	O	O
 no	O	O
@@ -22311,7 +22311,7 @@ y	O	O
 dibujo	O	O
 sobre	O	O
 la	O	O
-"	B-MISC	B-MISC
+"	B-MISC	O
 Arquitectura	I-MISC	O
 popular	I-MISC	O
 en	I-MISC	O
@@ -22647,8 +22647,8 @@ Aragón	I-ORG	I-ORG
 y	O	O
 la	O	O
 candidatura	O	O
-Jaca	B-MISC	B-ORG
-2010	I-MISC	I-ORG
+Jaca	B-MISC	B-MISC
+2010	I-MISC	O
 ,	O	O
 cuyo	O	O
 director	O	O
@@ -24059,7 +24059,7 @@ nuevos	O	O
 agentes	O	O
 infecciosos	O	O
 .	O	O
-Renedo	B-LOC	B-LOC
+Renedo	B-LOC	O
 ,	O	O
 23	O	O
 may	O	O
@@ -24501,7 +24501,7 @@ fuente	O	O
 la	O	O
 noticia	O	O
 titulada	O	O
-PRECIOS	O	O
+PRECIOS	O	B-MISC
 -	O	O
 CARBURANTES	O	O
 .	O	O
@@ -24534,7 +24534,7 @@ SUBE	O	O
 PESETA	O	O
 GASOLEO	O	O
 Y	O	O
-GASOLINAS	O	O
+GASOLINAS	O	I-PER
 ,	O	O
 EXCEPTO	O	B-ORG
 SUPER	O	O
@@ -25017,7 +25017,7 @@ de	I-LOC	I-MISC
 Costa	I-LOC	B-LOC
 Azul	I-LOC	I-PER
 ,	O	O
-Leiria/Fatima	B-LOC	O
+Leiria/Fatima	B-LOC	B-PER
 ,	O	O
 del	O	O
 Oeste	B-LOC	B-LOC
@@ -25418,7 +25418,7 @@ subrayó	O	O
 que	O	O
 durante	O	O
 el	O	O
-"	B-MISC	O
+"	B-MISC	B-MISC
 Congreso	I-MISC	B-ORG
 Europeo	I-MISC	I-ORG
 sobre	I-MISC	O
@@ -25427,7 +25427,7 @@ Problemática.	I-MISC	B-MISC
 Perspectivas	I-MISC	I-MISC
 de	I-MISC	O
 la	I-MISC	O
-Cooperación	I-MISC	B-MISC
+Cooperación	I-MISC	B-ORG
 Interregional	I-MISC	I-ORG
 en	I-MISC	O
 Europa	I-MISC	B-LOC
@@ -25524,7 +25524,7 @@ o	O	O
 Francia	B-LOC	B-ORG
 "	O	O
 .	O	O
-Resaltó	O	B-LOC
+Resaltó	O	O
 ,	O	O
 en	O	O
 este	O	O
@@ -25698,7 +25698,7 @@ fuente	O	O
 la	O	O
 noticia	O	O
 titulada	O	O
-PRECIOS	O	O
+PRECIOS	O	B-MISC
 -	O	O
 CARBURANTES	O	O
 .	O	O
@@ -25730,7 +25730,7 @@ SUBE	O	O
 PESETA	O	O
 GASOLEO	O	O
 Y	O	O
-GASOLINAS	O	O
+GASOLINAS	O	I-PER
 ,	O	O
 EXCEPTO	O	B-ORG
 SUPER	O	O
@@ -26240,7 +26240,7 @@ es	O	O
 transparencia	O	O
 "	O	O
 .	O	O
-Lamentó	O	B-LOC
+Lamentó	O	O
 ,	O	O
 en	O	O
 este	O	O
@@ -26469,7 +26469,7 @@ sprint	O	O
 especial	O	O
 en	O	O
 la	O	O
-BI-3717	B-MISC	O
+BI-3717	B-MISC	B-ORG
 a	O	O
 la	O	O
 altura	O	O
@@ -26684,10 +26684,10 @@ Europa	B-LOC	I-MISC
 vendrán	O	O
 los	O	O
 suizos	O	O
-Mephisto-Romers	B-ORG	O
+Mephisto-Romers	B-ORG	B-ORG
 y	O	O
-G..	B-ORG	B-PER
-Mita	I-ORG	I-ORG
+G..	B-ORG	B-MISC
+Mita	I-ORG	I-MISC
 Medic	I-ORG	I-PER
 ,	O	O
 el	O	O
@@ -26741,7 +26741,7 @@ Svorada	I-PER	I-PER
 (	O	O
 CZE	B-LOC	B-ORG
 -	O	O
-Lampre	B-ORG	B-ORG
+Lampre	B-ORG	B-LOC
 )	O	O
 m.	O	O
 t.	O	O
@@ -26752,7 +26752,7 @@ Cipollini	I-PER	I-PER
 (	O	O
 ITA	B-LOC	B-ORG
 -	O	O
-Saeco	B-ORG	B-ORG
+Saeco	B-ORG	B-LOC
 )	O	O
 m.	O	O
 t.	O	O
@@ -26847,7 +26847,7 @@ m.	O	O
 t.	O	O
 12	O	O
 .	O	O
-Bradley	B-PER	B-PER
+Bradley	B-PER	O
 McGree	I-PER	I-ORG
 (	O	O
 AUS	B-LOC	B-ORG
@@ -26897,13 +26897,13 @@ Jongh	I-PER	I-PER
 (	O	O
 HOL	B-LOC	B-ORG
 -	O	O
-Rabobank	B-ORG	B-ORG
+Rabobank	B-ORG	B-LOC
 )	O	O
 m.	O	O
 t.	O	O
 17	O	O
 .	O	O
-Robbie	B-PER	B-PER
+Robbie	B-PER	O
 McEwen	I-PER	I-ORG
 (	O	O
 AUS	B-LOC	B-ORG
@@ -26931,7 +26931,7 @@ Vierhouten	I-PER	I-PER
 (	O	O
 HOL	B-LOC	B-ORG
 -	O	O
-Rabobank	B-ORG	B-ORG
+Rabobank	B-ORG	B-LOC
 )	O	O
 m.	O	O
 t.	O	O
@@ -27035,7 +27035,7 @@ Simoni	I-PER	I-PER
 (	O	O
 ITA	B-LOC	B-ORG
 -	O	O
-Lampre	B-ORG	B-ORG
+Lampre	B-ORG	B-LOC
 )	O	O
 a	O	O
 1:53	O	O
@@ -27112,7 +27112,7 @@ Svoldelli	I-PER	I-PER
 (	O	O
 ITA	B-LOC	B-ORG
 -	O	O
-Saeco	B-ORG	B-ORG
+Saeco	B-ORG	B-LOC
 )	O	O
 m.	O	O
 t.	O	O
@@ -27124,7 +27124,7 @@ Rubiera	I-PER	I-PER
 (	O	O
 ESP	B-LOC	B-LOC
 -	O	O
-Kelme	B-ORG	B-ORG
+Kelme	B-ORG	B-LOC
 )	O	O
 a	O	O
 3:44	O	O
@@ -27190,7 +27190,7 @@ Las	O	O
 comisiones	O	O
 de	O	O
 Comunicación	B-MISC	B-MISC
-Social	I-MISC	I-MISC
+Social	I-MISC	I-ORG
 de	O	O
 las	O	O
 conferencias	O	O
@@ -27387,7 +27387,7 @@ Católica	I-ORG	I-ORG
 de	I-ORG	I-ORG
 Lisboa	I-ORG	B-LOC
 y	O	O
-Facultad	B-ORG	B-LOC
+Facultad	B-ORG	B-ORG
 de	I-ORG	I-MISC
 Ciencias	I-ORG	I-MISC
 de	I-ORG	I-MISC
@@ -27492,7 +27492,7 @@ expondrá	O	O
 el	O	O
 tema	O	O
 "	B-MISC	B-MISC
-Evangelización.	I-MISC	O
+Evangelización.	I-MISC	I-MISC
 medios	I-MISC	O
 de	I-MISC	O
 comunicación	I-MISC	O
@@ -28094,7 +28094,7 @@ de	O	O
 32	O	O
 trabajadores	O	O
 de	O	O
-Bridgestone-Firestone	B-ORG	O
+Bridgestone-Firestone	B-ORG	I-ORG
 en	O	O
 las	O	O
 fábricas	O	O
@@ -28240,7 +28240,7 @@ carrera	O	O
 La	O	O
 marcha	O	O
 entre	O	O
-Astorga	B-LOC	B-LOC
+Astorga	B-LOC	B-ORG
 y	O	O
 Mérida	B-LOC	B-LOC
 es	O	O
@@ -28314,26 +28314,26 @@ Valor	O	I-ORG
 anterior	O	O
 -	O	O
 Bruselas	B-LOC	B-LOC
-9.816	O	I-MISC
-Euros	O	B-ORG
+9.816	O	O
+Euros	O	O
 /	O	O
 lingote	O	O
 9.953	O	O
 Fráncfort	B-LOC	B-LOC
-9.720	O	I-MISC
-Euros	O	B-ORG
+9.720	O	O
+Euros	O	O
 /	O	O
 kg	O	O
 9.810	O	O
 Londres	B-LOC	B-LOC
-274,05	O	I-MISC
-Dólares	O	B-ORG
+274,05	O	O
+Dólares	O	O
 /	O	O
 onza	O	O
 275,05	O	O
 París	B-LOC	B-LOC
 9.680	O	O
-Euros	O	B-ORG
+Euros	O	O
 /	O	O
 kg	O	O
 9.830	O	O
@@ -28343,8 +28343,8 @@ Euros	O	B-ORG
 /	O	O
 gr	O	O
 s-d	O	O
-Zúrich	B-LOC	B-ORG
-15.150	O	I-MISC
+Zúrich	B-LOC	B-MISC
+15.150	O	O
 Francos	O	O
 suizos	O	O
 /	O	O
@@ -30283,7 +30283,7 @@ en	O	O
 1997	O	O
 ,	O	O
 subrayó	O	O
-Dell'Olmo	B-PER	O
+Dell'Olmo	B-PER	B-PER
 ,	O	O
 se	O	O
 produjo	O	O
@@ -30547,7 +30547,7 @@ centro	O	O
 privado	O	O
 concertado	O	O
 Hospital	B-LOC	B-PER
-Pascual	I-LOC	I-ORG
+Pascual	I-LOC	I-PER
 ,	O	O
 además	O	O
 de	O	O
@@ -30565,11 +30565,11 @@ extranjero	O	O
 Nuevas	O	O
 :	O	O
 -	O	O
-LIBANO	B-LOC	O
+LIBANO	B-LOC	B-LOC
 -	O	O
 ISRAEL	B-LOC	B-ORG
 /	O	O
-RETIRADA	O	O
+RETIRADA	O	B-ORG
 -	O	O
 Beirut	B-LOC	B-LOC
 -	O	O
@@ -30613,8 +30613,8 @@ Pendientes	O	O
 SIERRA	B-LOC	B-LOC
 LEONA	I-LOC	B-ORG
 /	O	O
-R.	B-LOC	O
-UNIDO	I-LOC	I-LOC
+R.	B-LOC	B-PER
+UNIDO	I-LOC	I-PER
 -	O	O
 Londres	B-LOC	B-LOC
 -	O	O
@@ -30837,7 +30837,7 @@ GMT	O	O
 )	O	O
 BOLSA	O	O
 -	O	O
-FRANCFORT	B-LOC	O
+FRANCFORT	B-LOC	B-LOC
 -	O	O
 Fráncfort	B-LOC	B-LOC
 (	O	O
@@ -30891,7 +30891,7 @@ GMT	B-LOC	O
 )	O	O
 EEUU	B-LOC	B-LOC
 -	O	O
-CHINA	B-LOC	O
+CHINA	B-LOC	B-LOC
 -	O	O
 Washington	B-LOC	B-LOC
 -	O	O
@@ -31205,7 +31205,7 @@ ISRAEL	B-LOC	O
 -	O	O
 LIBANO	B-LOC	B-ORG
 /	O	O
-LIBERACION	O	O
+LIBERACION	O	B-ORG
 -	O	O
 Beirut	B-LOC	B-LOC
 -	O	O
@@ -31270,7 +31270,7 @@ domingo	O	O
 .	O	O
 GRECIA	B-LOC	O
 -	O	O
-PARTENON	B-LOC	O
+PARTENON	B-LOC	B-LOC
 -	O	O
 Atenas	B-LOC	B-LOC
 -	O	O
@@ -31392,7 +31392,7 @@ Madrid	B-LOC	B-LOC
 3467304	O	O
 .	O	O
 Seguirá	O	B-PER
-Hernán	B-PER	I-PER
+Hernán	B-PER	B-PER
 Martín	I-PER	I-PER
 ,	O	O
 en	O	O
@@ -32359,7 +32359,7 @@ el	O	O
 gobierno	O	O
 foral	O	O
 del	O	O
-PP-UA	B-ORG	O
+PP-UA	B-ORG	B-ORG
 no	O	O
 ha	O	O
 recurrido	O	O
@@ -32371,7 +32371,7 @@ concesión	O	O
 de	O	O
 la	O	O
 autopista	O	O
-A-68	B-MISC	O
+A-68	B-MISC	B-MISC
 por	O	O
 parte	O	O
 del	O	O
@@ -32391,7 +32391,7 @@ las	O	O
 Juntas	B-ORG	B-ORG
 Generales	I-ORG	I-ORG
 .	O	O
-Ibarrondo	B-PER	B-LOC
+Ibarrondo	B-PER	O
 ,	O	O
 que	O	O
 compareció	O	O
@@ -32556,7 +32556,7 @@ accionistas	O	O
 de	O	O
 la	O	O
 autopista	O	O
-A-68	B-MISC	O
+A-68	B-MISC	B-MISC
 .	O	O
 Por	O	O
 todo	O	O
@@ -32637,7 +32637,7 @@ España	I-MISC	B-LOC
 ,	O	O
 del	O	O
 WTA	B-ORG	B-ORG
-Tour	I-ORG	O
+Tour	I-ORG	B-LOC
 y	O	O
 dotado	O	O
 con	O	O
@@ -32738,7 +32738,7 @@ Natale	I-PER	B-PER
 ITA	B-LOC	B-ORG
 )	O	O
 -	O	O
-Pista	O	B-ORG
+Pista	O	B-LOC
 2	O	O
 :	O	O
 A	O	O
@@ -32822,7 +32822,7 @@ Suárez	I-PER	I-PER
 ARG	B-LOC	B-ORG
 )	O	O
 -	O	O
-Pista	O	B-ORG
+Pista	O	O
 3	O	O
 :	O	O
 A	O	O
@@ -33585,7 +33585,7 @@ que	O	O
 el	O	O
 Tribunal	B-ORG	B-ORG
 de	I-ORG	I-ORG
-Defensa	I-ORG	I-ORG
+Defensa	I-ORG	B-MISC
 de	I-ORG	I-ORG
 la	I-ORG	O
 Competencia	I-ORG	B-MISC
@@ -33636,7 +33636,7 @@ y	O	O
 el	O	O
 tribunal	O	O
 de	O	O
-Defensa	B-ORG	I-ORG
+Defensa	B-ORG	B-MISC
 de	I-ORG	I-ORG
 la	I-ORG	O
 Competencia	I-ORG	B-MISC
@@ -34085,7 +34085,7 @@ Eroski	B-ORG	B-ORG
 ,	O	O
 Capabo	B-ORG	B-PER
 ,	O	O
-AlCampo	B-ORG	B-ORG
+AlCampo	B-ORG	O
 ,	O	O
 Makro	B-ORG	B-ORG
 y	O	O
@@ -34204,7 +34204,7 @@ unas	O	O
 líneas	O	O
 telefónicas	O	O
 .	O	O
-Llauradó	B-PER	B-LOC
+Llauradó	B-PER	O
 ,	O	O
 el	O	O
 más	O	O
@@ -34560,7 +34560,7 @@ investigando	O	O
 las	O	O
 autoridades	O	O
 de	O	O
-Defensa	B-ORG	I-ORG
+Defensa	B-ORG	B-MISC
 de	I-ORG	I-ORG
 la	I-ORG	O
 Competencia	I-ORG	B-MISC
@@ -35059,7 +35059,7 @@ y	O	O
 Guadalupe	B-LOC	B-LOC
 y	O	O
 entre	O	O
-El	B-LOC	O
+El	B-LOC	B-ORG
 Casar	I-LOC	B-ORG
 y	O	O
 Arroyo	B-LOC	B-LOC
@@ -35263,7 +35263,7 @@ DE	O	O
 LA	O	O
 CARCEL	B-LOC	O
 DE	I-LOC	O
-JIAM	I-LOC	O
+JIAM	I-LOC	B-LOC
 Beirut	B-LOC	B-LOC
 (	O	O
 EFE	B-ORG	B-ORG
@@ -35377,7 +35377,7 @@ LIBANO	B-LOC	O
 -	O	O
 ISRAEL	B-LOC	B-ORG
 /	O	O
-ENFRENTAMIENTOS	O	B-ORG
+ENFRENTAMIENTOS	O	B-MISC
 PERU	B-LOC	O
 :	O	O
 OBSERVADORES	O	O
@@ -35598,7 +35598,7 @@ de	O	O
 seguridad	O	O
 .	O	O
 SIERRA	B-LOC	O
-LEONA	I-LOC	O
+LEONA	I-LOC	I-LOC
 -	O	O
 GOLPE	O	O
 ETIOPIA	B-ORG	B-ORG
@@ -35673,7 +35673,7 @@ eritreo	O	O
 .	O	O
 ETIOPIA	B-LOC	O
 -	O	O
-ERITREA	B-LOC	B-MISC
+ERITREA	B-LOC	O
 EL	O	O
 GRAN	O	I-MISC
 CONSEJO	O	I-MISC
@@ -35842,7 +35842,7 @@ DEL	O	O
 JUICIO	O	O
 DE	O	O
 LOCKERBIE	B-LOC	O
-Camp	B-LOC	B-PER
+Camp	B-LOC	B-LOC
 Zeist	I-LOC	I-PER
 (	O	O
 Holanda	B-LOC	B-LOC
@@ -35899,12 +35899,12 @@ en	O	O
 .	O	O
 LOCKERBIE	B-LOC	O
 -	O	O
-JUICIO	O	B-ORG
+JUICIO	O	O
 CHAVEZ	B-PER	O
 PIDE	O	O
 AYUDA	O	O
 A	O	O
-GOBIERNO	B-ORG	B-ORG
+GOBIERNO	B-ORG	O
 DE	O	O
 EEUU	B-ORG	B-LOC
 PARA	O	O
@@ -36051,7 +36051,7 @@ ciento	O	O
 de	O	O
 su	O	O
 índice	O	O
-Mibtel	B-MISC	B-MISC
+Mibtel	B-MISC	B-PER
 ,	O	O
 que	O	O
 se	O	O
@@ -36290,7 +36290,7 @@ Unicredit	B-ORG	B-LOC
 )	O	O
 ,	O	O
 San	B-ORG	B-LOC
-Paolo	I-ORG	I-ORG
+Paolo	I-ORG	I-LOC
 (	O	O
 +1,82	O	O
 )	O	O
@@ -36327,7 +36327,7 @@ un	O	O
 por	O	O
 ciento	O	O
 .	O	O
-Generali	B-ORG	B-LOC
+Generali	B-ORG	O
 ,	O	O
 en	O	O
 el	O	O
@@ -36420,13 +36420,13 @@ Faustino	I-ORG	I-LOC
 mientras	O	O
 que	O	O
 subieron	O	O
-Tiscali	B-ORG	B-LOC
+Tiscali	B-ORG	B-PER
 (	O	O
 +2,08%	O	O
 )	O	O
 y	O	O
 e.	O	O
-Biscom	B-ORG	B-PER
+Biscom	B-ORG	B-LOC
 (	O	O
 +1,86%	O	O
 )	O	O
@@ -36446,7 +36446,7 @@ Municipal	I-ORG	I-ORG
 romana	I-ORG	O
 de	I-ORG	O
 la	I-ORG	O
-Energía.	I-ORG	O
+Energía.	I-ORG	I-ORG
 el	I-ORG	I-MISC
 Ambiente	I-ORG	B-ORG
 y	O	O
@@ -36470,7 +36470,7 @@ Fiat	B-ORG	B-LOC
 .	O	O
 Bajan	O	O
 :	O	O
-Alitalia	B-ORG	B-PER
+Alitalia	B-ORG	O
 ,	O	O
 Autostrade	B-ORG	B-PER
 ,	O	O
@@ -36484,7 +36484,7 @@ Banca	B-ORG	B-ORG
 di	I-ORG	O
 Roma	I-ORG	B-LOC
 ,	O	O
-Bipop-Carire	B-ORG	O
+Bipop-Carire	B-ORG	B-LOC
 ,	O	O
 Bnl	B-ORG	B-PER
 ,	O	O
@@ -36518,7 +36518,7 @@ Pirelli	B-ORG	B-PER
 Ras	B-ORG	B-PER
 Fraz	I-ORG	I-PER
 ,	O	O
-Rolo	B-ORG	B-PER
+Rolo	B-ORG	B-LOC
 1474	I-ORG	O
 ,	O	O
 Seat	B-ORG	B-PER
@@ -36935,7 +36935,7 @@ del	I-ORG	I-ORG
 Pacto	I-ORG	B-MISC
 por	I-ORG	O
 el	I-ORG	O
-Empleo	I-ORG	I-MISC
+Empleo	I-ORG	B-MISC
 de	O	I-ORG
 Palencia	B-LOC	B-LOC
 ,	O	O
@@ -37063,7 +37063,7 @@ del	I-ORG	I-ORG
 Pacto	I-ORG	B-MISC
 por	I-ORG	O
 el	I-ORG	O
-Empleo	I-ORG	B-MISC
+Empleo	I-ORG	B-ORG
 fue	O	O
 constituida	O	O
 hace	O	O
@@ -37177,7 +37177,7 @@ Suecia	B-LOC	B-LOC
 Eslovaquia	B-LOC	B-LOC
 ,	O	O
 1	O	O
-Tillstrom	B-PER	B-PER
+Tillstrom	B-PER	O
 /	O	O
 Kulti	B-PER	B-PER
 (	O	O
@@ -37395,7 +37395,7 @@ y	O	O
 dijo	O	O
 que	O	O
 "	O	O
-Chaves	B-PER	B-MISC
+Chaves	B-PER	O
 se	O	O
 equivoca	O	O
 "	O	O
@@ -37899,7 +37899,7 @@ en	O	O
 general	O	O
 .	O	O
 Según	O	O
-ERC	B-ORG	B-PER
+ERC	B-ORG	B-ORG
 ,	O	O
 un	O	O
 pensionista	O	O
@@ -38229,7 +38229,7 @@ de	O	O
 la	O	O
 Región	O	B-ORG
 .	O	O
-Alonso	B-PER	B-LOC
+Alonso	B-PER	O
 ,	O	O
 que	O	O
 mantuvo	O	O
@@ -38259,7 +38259,7 @@ del	I-ORG	O
 Instituto	I-ORG	B-ORG
 de	I-ORG	I-ORG
 la	I-ORG	O
-Vid.	I-ORG	O
+Vid.	I-ORG	I-ORG
 el	I-ORG	O
 Vino	I-ORG	B-LOC
 (	O	O
@@ -39676,7 +39676,7 @@ a	O	O
 los	O	O
 colonos	O	O
 .	O	O
-Budapest	B-LOC	B-LOC
+Budapest	B-LOC	O
 ,	O	O
 23	O	O
 may	O	O
@@ -40029,7 +40029,7 @@ la	O	O
 empresa	O	O
 petrolera	O	O
 húngara	O	O
-MOL	B-ORG	O
+MOL	B-ORG	B-ORG
 participe	O	O
 en	O	O
 la	O	O
@@ -40081,7 +40081,7 @@ país	O	O
 Slobodan	B-PER	B-PER
 Milosevic	I-PER	I-PER
 .	O	O
-Coincidieron	O	B-LOC
+Coincidieron	O	O
 ,	O	O
 dijo	O	O
 Racan	B-PER	B-PER
@@ -40205,7 +40205,7 @@ población	O	O
 "	O	O
 .	O	O
 "	O	O
-Ofrecemos	O	I-MISC
+Ofrecemos	O	O
 la	O	O
 posibilidad	O	O
 de	O	O
@@ -40915,7 +40915,7 @@ esta	O	O
 forma	O	O
 ,	O	O
 el	O	O
-Ibex-35	B-MISC	O
+Ibex-35	B-MISC	B-MISC
 avanzó	O	O
 53,80	O	O
 puntos	O	O
@@ -41574,7 +41574,7 @@ y	O	O
 97,300	O	O
 yenes	O	O
 .	O	O
-NITRATOS	O	O
+NITRATOS	O	B-ORG
 Girona	B-LOC	B-LOC
 ,	O	O
 23	O	O
@@ -41720,8 +41720,8 @@ contaminación	O	O
 26	O	O
 municipios	O	O
 de	O	O
-l'Alt	B-LOC	O
-Empordá	I-LOC	B-LOC
+l'Alt	B-LOC	I-MISC
+Empordá	I-LOC	B-PER
 ,	O	O
 17	O	O
 del	O	O
@@ -41735,7 +41735,7 @@ y	O	O
 5	O	O
 del	O	O
 Pla	B-LOC	B-ORG
-de	I-LOC	O
+de	I-LOC	I-MISC
 l'Estany	I-LOC	O
 .	O	O
 Las	O	O
@@ -42872,7 +42872,7 @@ Ozores	I-PER	I-PER
 y	O	O
 Antonio	B-PER	B-PER
 Fraguas	I-PER	I-PER
-"	B-PER	I-MISC
+"	B-PER	O
 Forges	I-PER	I-MISC
 "	I-PER	O
 se	O	O
@@ -42937,7 +42937,7 @@ espacio	O	O
 de	O	O
 Onda	B-ORG	B-PER
 Cero	I-ORG	I-MISC
-"	B-MISC	I-MISC
+"	B-MISC	O
 El	I-MISC	O
 Debate	I-MISC	B-ORG
 sobre	I-MISC	O
@@ -42947,7 +42947,7 @@ la	I-MISC	O
 Nación	I-MISC	B-ORG
 "	I-MISC	O
 .	O	O
-Blanco	B-PER	B-PER
+Blanco	B-PER	O
 decidió	O	O
 escribir	O	O
 este	O	O
@@ -43200,7 +43200,7 @@ de	O	O
 la	O	O
 historia	O	O
 de	O	O
-Madrid	B-LOC	B-LOC
+Madrid	B-LOC	I-ORG
 durante	O	O
 la	O	O
 etapa	O	O
@@ -43251,7 +43251,7 @@ extraordinario	O	O
 .	O	O
 Antonio	B-PER	B-PER
 Fraguas	I-PER	I-PER
-"	B-PER	I-MISC
+"	B-PER	O
 Forges	I-PER	I-MISC
 "	I-PER	O
 dijo	O	O
@@ -44067,7 +44067,7 @@ a	O	O
 las	O	O
 obras	O	O
 .	O	O
-Alemán	B-PER	B-LOC
+Alemán	B-PER	O
 ,	O	O
 junto	O	O
 con	O	O
@@ -46791,7 +46791,7 @@ profesora	O	O
 del	O	O
 Instituto	B-ORG	B-ORG
 de.	I-ORG	O
-Carballeira	I-ORG	B-MISC
+Carballeira	I-ORG	B-PER
 pueda	O	O
 coger	O	O
 la	O	O
@@ -46942,7 +46942,7 @@ la	O	O
 ley	O	O
 "	O	O
 .	O	O
-Resulta	O	B-PER
+Resulta	O	O
 "	O	O
 paradójico	O	O
 que	O	O
@@ -47978,7 +47978,7 @@ señal	O	O
 de	O	O
 que	O	O
 los	O	O
-Catorce	B-ORG	O
+Catorce	B-ORG	B-ORG
 reflexionan	O	O
 sobre	O	O
 sus	O	O
@@ -48057,7 +48057,7 @@ las	O	O
 conclusiones	O	O
 del	O	O
 VII	B-ORG	B-MISC
-Congreso	I-ORG	B-PER
+Congreso	I-ORG	I-MISC
 Confederal	I-ORG	I-ORG
 del	O	O
 sindicato	O	O
@@ -49160,7 +49160,7 @@ en	O	O
 el	O	O
 barrio	O	O
 de	O	O
-D'Alt	B-LOC	I-ORG
+D'Alt	B-LOC	B-PER
 Vila	I-LOC	I-PER
 ,	O	O
 y	O	O
@@ -49523,7 +49523,7 @@ La	O	O
 segunda	O	O
 edición	O	O
 de	O	O
-FiraGran	B-MISC	B-ORG
+FiraGran	B-MISC	O
 ,	O	O
 el	O	O
 salón	O	O
@@ -49709,7 +49709,7 @@ son	O	O
 novedad	O	O
 los	O	O
 premios	B-MISC	O
-FiraGran	I-MISC	B-ORG
+FiraGran	I-MISC	O
 ,	O	O
 que	O	O
 pretenden	O	O
@@ -49746,7 +49746,7 @@ del	O	O
 Comité	B-ORG	B-ORG
 Organizador	I-ORG	I-ORG
 de	I-ORG	O
-FiraGran	I-ORG	B-ORG
+FiraGran	I-ORG	O
 ,	O	O
 tendrá	O	O
 un	O	O
@@ -50169,7 +50169,7 @@ financiera	O	O
 al	O	O
 ADRI	B-ORG	B-ORG
 de	I-ORG	O
-Daroca-Calamocha	I-ORG	O
+Daroca-Calamocha	I-ORG	I-MISC
 que	O	O
 cuenta	O	O
 con	O	O
@@ -50738,7 +50738,7 @@ exentas	O	O
 de	O	O
 tributación	O	O
 por	O	O
-lRPF	B-MISC	B-ORG
+lRPF	B-MISC	O
 las	O	O
 rentas	O	O
 procedentes	O	O
@@ -51127,7 +51127,7 @@ ciento	O	O
 .	O	O
 EFE	B-ORG	B-ORG
 cr/c	O	O
-Lima	B-LOC	B-PER
+Lima	B-LOC	B-LOC
 ,	O	O
 23	O	O
 may	O	O
@@ -51362,7 +51362,7 @@ Mecanismo	B-MISC	B-MISC
 de	I-MISC	I-MISC
 Consulta	I-MISC	I-ORG
 Política.	I-MISC	I-ORG
-Cooperación	I-MISC	I-PER
+Cooperación	I-MISC	I-MISC
 .	O	O
 El	O	O
 mencionado	O	O
